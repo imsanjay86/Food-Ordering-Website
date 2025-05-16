@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Authentic Indian cuisine featuring a wide variety of dishes from different regions of India">
+    <title>Indian Food Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="Spice Haven - Authentic Indian Restaurant" width="200" height="50">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <a href="#cart" class="cart-icon" aria-label="Shopping cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" aria-label="Items in cart">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Experience Authentic Indian Cuisine</h1>
+                    <p class="hero-description">Discover the rich flavors and aromatic spices of traditional Indian
+                        dishes</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary hover-lift">
+                            <i class="fas fa-utensils"></i>
+                            View Our Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-background"></div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <p class="section-subtitle">We take pride in serving our community with the finest Indian cuisine
+                    </p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="feature-card">
+                        <i class="fas fa-utensils feature-icon"></i>
+                        <h3>Authentic Recipes</h3>
+                        <p>Traditional dishes prepared with authentic Indian spices and cooking methods</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-leaf feature-icon"></i>
+                        <h3>Fresh Ingredients</h3>
+                        <p>We use only the freshest ingredients sourced from local suppliers</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-truck feature-icon"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Quick and reliable delivery service to your doorstep</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-background"></div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="menu-background"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Menu</h2>
+                    <p class="section-subtitle">Explore our wide range of authentic Indian dishes</p>
+                </div>
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="starters">Starters</button>
+                    <button class="filter-btn" data-filter="curries">Curries</button>
+                    <button class="filter-btn" data-filter="biryani">Biryani & Rice</button>
+                    <button class="filter-btn" data-filter="south-indian">South Indian</button>
+                    <button class="filter-btn" data-filter="street-food">Street Food</button>
+                    <button class="filter-btn" data-filter="tandoor">Tandoor</button>
+                    <button class="filter-btn" data-filter="breads">Breads</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                    <button class="filter-btn" data-filter="beverages">Beverages</button>
+                </div>
+                <div class="menu-grid grid grid-3">
+                    <!-- Starters -->
+                    <div class="menu-item" data-category="starters">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400" alt="Samosa"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Samosa</h3>
+                            <p>Crispy pastry filled with spiced potatoes and peas</p>
+                            <div class="price">₹20</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="starters">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400" alt="Paneer Tikka"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Paneer Tikka</h3>
+                            <p>Grilled cottage cheese with aromatic spices</p>
+                            <div class="price">₹220</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Curries -->
+                    <div class="menu-item" data-category="curries">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400"
+                            alt="Butter Chicken" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Butter Chicken</h3>
+                            <p>Tender chicken in rich tomato-based curry</p>
+                            <div class="price">₹350</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="curries">
+                        <img src="https://media.istockphoto.com/id/669281436/photo/tasty-palak-paneer-served-with-nan-naan-roti-chapati-fulka-tandoori-naan-indian-bread.jpg?s=612x612&w=0&k=20&c=YJ5TWx79ZremTt3xfrmSw3wyczp-LCbpoTNWOUm4fnQ=" alt="Palak Paneer"
+                            loading="lazy">
+
+                       
+
+                        <div class="menu-item-content">
+                            <h3>Palak Paneer</h3>
+                            <p>Cottage cheese cubes in creamy spinach gravy</p>
+                            <div class="price">₹280</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Biryani -->
+                    <div class="menu-item" data-category="biryani">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400"
+                            alt="Chicken Biryani" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Hyderabadi Chicken Biryani</h3>
+                            <p>Aromatic rice with tender chicken and spices</p>
+                            <div class="price">₹320</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="biryani">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=400" alt="Veg Biryani"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Vegetable Biryani</h3>
+                            <p>Fragrant rice with mixed vegetables and spices</p>
+                            <div class="price">₹260</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- South Indian -->
+                    <div class="menu-item" data-category="south-indian">
+                        <img src="https://media.istockphoto.com/id/942682776/photo/masala-dosa-indian-breakfast-crepes-with-spicy-potato-filling.jpg?s=612x612&w=0&k=20&c=SCyxwiWKxy7LAXaGlfhnlUabTfRkxQBuTFUsqUx-VDk="
+                        alt="Masala dosa"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Masala Dosa</h3>
+                            <p>Crispy rice crepe with spiced potato filling</p>
+                            <div class="price">₹140</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="south-indian">
+                        <img src="https://media.istockphoto.com/id/182455612/photo/idli-sambhar-and-chutney-south-indian-dish-on-banana-leaf.jpg?s=612x612&w=0&k=20&c=5a9zdttQd4RuzpMp_0qaxbXIXdt9rWt4rp2kockzBFs=" alt="Idli Sambar"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Idli Sambar</h3>
+                            <p>Steamed rice cakes with lentil soup</p>
+                            <div class="price">₹120</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Street Food -->
+                    <!-- <div class="menu-item" data-category="street-food">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400" alt="Pani Puri" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Pani Puri</h3>
+                            <p>Crispy shells with spiced water and filling</p>
+                            <div class="price">₹100</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div> -->
+
+                    <div class="menu-item" data-category="street-food">
+                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400" alt="Vada Pav"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Vada Pav</h3>
+                            <p>Spiced potato fritter in a bun</p>
+                            <div class="price">₹80</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Tandoor -->
+                    <div class="menu-item" data-category="tandoor">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400"
+                            alt="Chicken Tikka" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Chicken Tikka</h3>
+                            <p>Marinated chicken pieces grilled in tandoor</p>
+                            <div class="price">₹320</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="menu-item" data-category="tandoor">
+                        <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc?w=400" alt="Tandoori Roti" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Tandoori Roti</h3>
+                            <p>Whole wheat bread baked in tandoor</p>
+                            <div class="price">₹40</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div> -->
+
+                    <!-- Breads -->
+                    <div class="menu-item" data-category="breads">
+                        <img src="https://media.istockphoto.com/id/1305516603/photo/shahi-paneer-or-paneer-kadai.jpg?s=612x612&w=0&k=20&c=V5xD4I1ciIjtyoH0FzuNeFnAl7oV9RJAoNs52X6pgE4=" alt="Butter Naan"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Butter Naan</h3>
+                            <p>Soft bread brushed with butter</p>
+                            <div class="price">₹60</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breads">
+                        <img src="https://media.istockphoto.com/id/1140752821/photo/indian-naan-bread-with-garlic-butter-on-wooden-table.jpg?s=612x612&w=0&k=20&c=lTtokg-1e2OxzzPDHhtwWLR_43TCRBTcmpJU08OL6nQ=" alt="Garlic Naan"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Garlic Naan</h3>
+                            <p>Soft and fluffy naan bread topped with garlic butter and fresh herbs</p>
+                            <div class="price">₹80</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Desserts -->
+                    <!-- <div class="menu-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1589119908995-c6837fa14848?w=400" alt="Gulab Jamun" loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Gulab Jamun</h3>
+                            <p>Deep-fried milk solids in sugar syrup</p>
+                            <div class="price">₹120</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div> -->
+
+                    <!-- Beverages -->
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://images.unsplash.com/photo-1561336526-2914f13ceb36?w=400" alt="Masala Chai"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Masala Chai</h3>
+                            <p>Indian spiced tea with milk</p>
+                            <div class="price">₹50</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://images.unsplash.com/photo-1694923450868-b432a8ee52aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vbW9zfGVufDB8fDB8fHww" alt="Masala Chai"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Momos</h3>
+                            <p>Favour with steam momos.</p>
+                            <div class="price">₹120</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=400" alt="Mango Lassi"
+                            loading="lazy">
+                        <div class="menu-item-content">
+                            <h3>Masala Mojito</h3>
+                            <p>Sweet yogurt drink with mango pulp</p>
+                            <div class="price">₹90</div>
+                            <button class="order-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Welcome to Spice Haven, where we bring you the authentic flavors of
+                        India</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Our chefs have years of experience in traditional Indian cooking, ensuring each dish is
+                            prepared with the perfect blend of spices and ingredients.</p>
+                        <p>We take pride in serving our community with the finest Indian cuisine, maintaining the
+                            highest standards of quality and taste in every dish we serve.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=800"
+                            alt="Our restaurant interior" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="section-background"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you! Contact us for reservations, feedback, or
+                        any queries.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-card hover-lift">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                            <p>123 Spice Street, Foodville<br>Gurugram, India 122001</p>
+                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                                class="direction-link">
+                                <i class="fas fa-directions"></i>
+                                Get Directions
+                            </a>
+                        </div>
+
+                        <div class="contact-card hover-lift">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Opening Hours</h3>
+                            <ul class="hours-list">
+                                <li>
+                                    <span>Monday - Friday</span>
+                                    <span>11:00 AM - 10:00 PM</span>
+                                </li>
+                                <li>
+                                    <span>Saturday - Sunday</span>
+                                    <span>11:00 AM - 11:00 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-card hover-lift">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                            <p class="phone-numbers">
+                                <a href="tel:+919876543210">
+                                    <i class="fas fa-phone"></i>
+                                    +91 98765 43210
+                                </a>
+                                <a href="tel:+919876543211">
+                                    <i class="fas fa-phone"></i>
+                                    +91 98765 43211
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="contact-card hover-lift">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p class="email-addresses">
+                                <a href="mailto:info@SpiceHav.com">
+                                    <i class="fas fa-envelope"></i>
+                                    info@SpiceHav.com
+                                </a>
+                                <a href="mailto:support@indianfood.com">
+                                    <i class="fas fa-envelope"></i>
+                                    support@indianfood.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <div class="form-header">
+                            <h3>Send us a Message</h3>
+                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                        </div>
+
+                        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form"
+                            id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-user"></i> Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <span class="error-message">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="error-message">Please enter a valid email</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                    <span class="error-message">Please enter a valid phone number</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="reservation">Reservation</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="catering">Catering</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <span class="error-message">Please select a subject</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment"></i> Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                                <span class="error-message">Please enter your message</span>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+
+                        <div id="formSuccess" class="form-success hidden">
+                            <div class="success-content">
+                                <i class="fas fa-check-circle"></i>
+                                <h3>Thank You!</h3>
+                                <p>Your message has been sent successfully. We'll get back to you soon!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.98!3d40.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM0LCsDQ1JzAwLjAiTiA3M8KwNTgnNDguMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                        allowfullscreen=""
+                        title="Restaurant Location Map"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Cart Panel -->
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h2>Your Cart <span class="cart-count">0</span></h2>
+                <button class="close-cart" title="Close Cart" aria-label="Close Cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">₹0</span>
+                </div>
+                <button class="checkout-btn" title="Proceed to Checkout">
+                    <i class="fas fa-shopping-bag"></i>
+                    Proceed to Checkout
+                </button>
+                <button class="clear-cart-btn" title="Clear Cart">
+                    <i class="fas fa-trash"></i>
+                    Clear Cart
+                </button>
+            </div>
+        </div>
+        <div class="cart-overlay"></div>
+
+        <!-- Cart Template -->
+        <template id="cart-item-template">
+            <div class="cart-item">
+                <img src="" alt="" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3 class="cart-item-name"></h3>
+                    <div class="cart-item-price"></div>
+                    <div class="cart-item-controls">
+                        <button class="quantity-btn minus" title="Decrease Quantity">
+                            <i class="fas fa-minus"></i>
+                            <span class="sr-only">Decrease Quantity</span>
+                        </button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn plus" title="Increase Quantity">
+                            <i class="fas fa-plus"></i>
+                            <span class="sr-only">Increase Quantity</span>
+                        </button>
+                        <button class="remove-item" title="Remove Item">
+                            <i class="fas fa-trash"></i>
+                            <span class="sr-only">Remove Item</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Order Success Modal -->
+        <div class="order-success-modal">
+            <div class="success-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Order Placed Successfully!</h2>
+                <div class="order-details">
+                    <div class="order-number">
+                        Order #<span class="order-id">---</span>
+                    </div>
+                    <div class="estimated-time">
+                        Estimated Delivery Time: <span class="delivery-time">30-45 minutes</span>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-items">
+                        <!-- Items will be added here dynamically -->
+                    </div>
+                    <div class="summary-total">
+                        <span>Total Amount:</span>
+                        <span class="final-amount">₹0</span>
+                    </div>
+                </div>
+                <div class="success-actions">
+                    <button class="track-order-btn">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Track Order
+                    </button>
+                    <button class="continue-shopping-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Continue Shopping
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Success Template -->
+        <template id="summary-item-template">
+            <div class="summary-item">
+                <span class="item-name"></span>
+                <div class="item-details">
+                    <span class="item-quantity">x1</span>
+                    <span class="item-price">₹0</span>
+                </div>
+            </div>
+        </template>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Opening Hours</h3>
+                        <ul class="footer-links">
+                            <li>Monday - Friday: 11:00 AM - 10:00 PM</li>
+                            <li>Saturday - Sunday: 11:00 AM - 11:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Spice Haven. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
